@@ -27,6 +27,22 @@ input {
 
 html {
   font-size: 14px;
+  cursor: none;
+}
+
+#cursor {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #6DB645;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 8px #5ce910;
+          box-shadow: 0px 0px 8px #5ce910;
 }
 
 #index {
@@ -143,8 +159,8 @@ html {
 }
 
 #index .bee-active {
-  -webkit-animation: beeMove 18000ms ease-in-out;
-          animation: beeMove 18000ms ease-in-out;
+  -webkit-animation: beeMove 12000ms ease-in-out;
+          animation: beeMove 12000ms ease-in-out;
 }
 
 #index #titre {
@@ -287,6 +303,8 @@ html {
 
 #index #btn-box .fond {
   position: relative;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 #index #btn-box .fond img {
@@ -311,6 +329,15 @@ html {
   border-bottom: 2px solid #555555;
   border-right: 2px solid #555555;
   text-shadow: 3px 3px 0px #555555;
+}
+
+#index a:hover {
+  cursor: none;
+}
+
+#index a:hover .fond {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 #index .main-btn {
@@ -387,5 +414,176 @@ html {
 #index #info p {
   font-family: "corps", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+}
+
+#sommaire {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/d3l1qoj-f1b1c676-9602-4c65-bd7d-ea518fbc8b88.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sommaire .btn {
+  background-color: #808080;
+  font-family: "corps", Arial, Helvetica, sans-serif;
+  color: white;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-top: 2px solid #C1BEBE;
+  border-left: 2px solid #C1BEBE;
+  border-bottom: 2px solid #555555;
+  border-right: 2px solid #555555;
+  text-shadow: 3px 3px 0px #555555;
+}
+
+#sommaire .fond {
+  position: absolute;
+  width: 15vw;
+  height: 7vh;
+  bottom: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sommaire .fond img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: overlay;
+}
+
+#sommaire .fond:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+#sommaire .claire {
+  width: 100%;
+  background-color: white;
+  mix-blend-mode: overlay;
+}
+
+#sommaire #claire-haut {
+  height: 10vh;
+}
+
+#sommaire #claire-bas {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#sommaire .abs-btn {
+  width: 15vw;
+  height: 7vh;
+}
+
+#sommaire #milieux {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sommaire #milieux .block-monde {
+  width: 35%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "corps", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+#sommaire #milieux .block-monde h2 {
+  color: #EEEDED;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+#sommaire #milieux .block-monde h3 {
+  color: #727272;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+#sommaire #milieux .block-monde .img {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#sommaire #milieux .block-monde .img .play {
+  position: absolute;
+  height: 50%;
+  right: 20%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+
+#sommaire #milieux .block-monde .img .play img {
+  height: 100%;
+  width: auto;
+  z-index: 999;
+}
+
+#sommaire #milieux .block-monde .img .play .play2 {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  z-index: -6;
+}
+
+#sommaire #milieux .block-monde .img img {
+  height: 100%;
+  width: auto;
+}
+
+#sommaire #milieux .block-monde:hover .img .play {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
