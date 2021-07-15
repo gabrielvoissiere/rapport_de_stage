@@ -38,21 +38,6 @@ html {
     cursor: none;
 }
 
-#cursor {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #6DB645;
-    // border: 2px solid #6DB645;
-    border-radius: 100%;
-    pointer-events: none;
-    z-index: 999;
-    box-shadow: 0px 0px 8px #5ce910;
-    // mix-blend-mode: difference;
-}
 
 #index {
     width: 100vw;
@@ -62,6 +47,20 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    #cursor {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #6DB645;
+        border-radius: 100%;
+        pointer-events: none;
+        z-index: 999;
+        box-shadow: 0px 0px 8px #6DB645;
+    }
 
     @keyframes beeMove {
         0% {
@@ -346,6 +345,20 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    #cursor {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #C28340;
+        border-radius: 100%;
+        pointer-events: none;
+        z-index: 999;
+        box-shadow: 0px 0px 8px #C28340;
+    }
 
     .btn {
         background-color: $gris-btn;

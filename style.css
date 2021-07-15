@@ -30,21 +30,6 @@ html {
   cursor: none;
 }
 
-#cursor {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #6DB645;
-  border-radius: 100%;
-  pointer-events: none;
-  z-index: 999;
-  -webkit-box-shadow: 0px 0px 8px #5ce910;
-          box-shadow: 0px 0px 8px #5ce910;
-}
-
 #index {
   width: 100vw;
   height: 100vh;
@@ -60,6 +45,21 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#index #cursor {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #6DB645;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 8px #6DB645;
+          box-shadow: 0px 0px 8px #6DB645;
 }
 
 @-webkit-keyframes beeMove {
@@ -431,6 +431,21 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#sommaire #cursor {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #C28340;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 8px #C28340;
+          box-shadow: 0px 0px 8px #C28340;
 }
 
 #sommaire .btn {
