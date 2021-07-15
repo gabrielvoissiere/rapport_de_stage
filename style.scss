@@ -1,0 +1,314 @@
+$gris-claire: #C1BEBE;
+$gris-sombre: #555555;
+$faux-blanc:#EEEDED;
+$gris-semi-claire: #727272;
+$jaune-clair: #ffff00;
+$jaune-sombre: #88882C;
+$gris-btn: #808080;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label,
+input {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "corps";
+    src: url("/fonts/Minecraft.ttf");
+}
+
+@font-face {
+    font-family: "titre";
+    src: url("/fonts/minecrafter-alt.ttf");
+}
+
+html {
+    font-size: 14px;
+}
+
+#index {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/Minecraft-Caves-Cliffs.jpg");
+    background-size: cover;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    @keyframes beeMove {
+        0% {
+            top: 50%;
+            right: 0%;
+            opacity: 1;
+        }
+
+        10% {
+            top: 25%;
+        }
+
+        20% {
+            top: 50%;
+        }
+
+        30% {
+            top: 25%;
+        }
+
+        40% {
+            top: 50%;
+        }
+
+        50% {
+            top: 25%;
+            right: 115%;
+        }
+
+        60% {
+            top: 50%;
+        }
+
+        70% {
+            top: 25%;
+        }
+
+        80% {
+            top: 50%;
+        }
+
+        90% {
+            top: 25%;
+        }
+
+        100% {
+            top: 45%;
+            right: 0%;
+            transform: rotateY(180deg);
+            opacity: 1;
+        }
+    }
+
+    #bee {
+        width: 8rem;
+        height: auto;
+        position: absolute;
+        right: 0%;
+        top: 45%;
+        opacity: 0;
+        z-index: 999;
+    }
+
+    .bee-active {
+        animation: beeMove 18000ms ease-in-out;
+    }
+
+    #titre {
+        width: 64rem;
+        padding: 35px 0px 35px 0px;
+        position: relative;
+        transform: rotateX(45deg) perspective(800px);
+
+        #titre-devant {
+            font-size: 5.5rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            width: auto;
+            text-align: center;
+            color: $gris-claire;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+            z-index: 1;
+        }
+
+        #titre-derriere {
+            position: absolute;
+            top: 50px;
+            font-size: 5.5rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            width: 100%;
+            text-align: center;
+            color: $gris-sombre;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+            z-index: -1;
+        }
+
+        #sous-titre-devant {
+            position: absolute;
+            top: 59px;
+            font-size: 2.3rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            transform: translateX(-50%);
+            left: 50%;
+            width: auto;
+            color: $faux-blanc;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+            z-index: 3;
+        }
+
+        #sous-titre-derriere {
+            position: absolute;
+            top: 66px;
+            font-size: 2.3rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            transform: translateX(-50%);
+            left: 50%;
+            width: auto;
+            color: $gris-sombre;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+            z-index: 2;
+        }
+
+        #nom {
+
+            @keyframes nom {
+                0% {
+                    transform: scale(0.8) rotateZ(-16deg);
+                }
+
+                100% {
+                    transform: scale(1) rotateZ(-16deg);
+                }
+            }
+
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: -6%;
+            top: 30%;
+            display: flex;
+            animation: nom 1000ms alternate infinite ease-in-out both;
+
+            #nom-devant {
+                font-size: 2.5rem;
+                font-family: "corps", Arial, Helvetica, sans-serif;
+                width: auto;
+                color: $jaune-clair;
+                z-index: 5;
+                transform: rotateX(0deg) perspective(0px);
+            }
+
+            #nom-derriere {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                font-size: 2.5rem;
+                font-family: "corps", Arial, Helvetica, sans-serif;
+                width: auto;
+                color: $jaune-sombre;
+                z-index: 4;
+                transform: rotateX(0deg) perspective(0px);
+            }
+        }
+    }
+
+    #btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.5vw;
+        height: 44vh;
+
+        .fond {
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                left: 0px;
+                top: 0px;
+                mix-blend-mode: overlay;
+            }
+        }
+    }
+
+    .btn {
+        background-color: $gris-btn;
+        font-family: "corps", Arial, Helvetica, sans-serif;
+        color: white;
+        height: 3rem;
+        font-size: 1.5rem;
+        border-top: 2px solid $gris-claire;
+        border-left: 2px solid $gris-claire;
+        border-bottom: 2px solid $gris-sombre;
+        border-right: 2px solid $gris-sombre;
+        text-shadow: 3px 3px 0px $gris-sombre;
+    }
+
+    .main-btn {
+        width: 35rem;
+    }
+
+    #sous-btn {
+        display: flex;
+        margin-top: 10vh;
+
+        #centre {
+            width: 35rem;
+            display: flex;
+            justify-content: space-between;
+
+            .fond {
+                width: 49.25%;
+
+                .centre-btn {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+        #gauche {
+            margin-right: 8px;
+            width: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+
+        #droite {
+            margin-left: 8px;
+            width: 3rem;
+
+            i {
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    }
+
+    #info {
+        bottom: 0%;
+        position: absolute;
+        display: flex;
+        width: 95vw;
+        justify-content: space-between;
+        color: white;
+
+        p {
+            font-family: "corps", Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+}
