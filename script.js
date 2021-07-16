@@ -1,9 +1,12 @@
+// ! faire systeme de succes
+
 let beeBtn = document.getElementById("bee-btn")
 let quitBtn = document.getElementById("quit-btn")
 
 beeBtn.addEventListener("click", function () {
     document.getElementById("bee").classList.add("bee-active")
     document.getElementById("bee-succes").classList.add("bee-succes-active")
+
     setTimeout(() => {
         document.getElementById("bee-succes").classList.remove("bee-succes-active")
     }, 4000);

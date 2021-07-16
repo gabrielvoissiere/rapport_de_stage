@@ -7,11 +7,3 @@ enchantBtn.addEventListener("click", function () {
         document.getElementById("enchant-succes").classList.remove("enchant-succes-active")
     }, 4000);
 })
-
-
-
-beeBtn.addEventListener("click", function () {
-    setTimeout(() => {
-        document.getElementById("bee").classList.remove("bee-active")
-    }, 13000);
-})
