@@ -2,10 +2,61 @@ let beeBtn = document.getElementById("bee-btn")
 
 beeBtn.addEventListener("click", function () {
     document.getElementById("bee").classList.add("bee-active")
+    document.getElementById("bee-succes").classList.add("bee-succes-active")
     setTimeout(() => {
-        location.reload()
+        document.getElementById("bee-succes").classList.remove("bee-succes-active")
+    }, 4000);
+    setTimeout(() => {
+        document.getElementById("bee").classList.remove("bee-active")
     }, 13000);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // $(document).ready(function () {
 //     $(function () {
