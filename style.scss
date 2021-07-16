@@ -38,6 +38,13 @@ html {
     cursor: none;
 }
 
+body {
+
+    #sound {
+        display: none;
+    }
+}
+
 
 #index {
     width: 100vw;
@@ -138,6 +145,19 @@ html {
     }
 
     .bee-succes-active {
+        transform: translateX(0) !important;
+    }
+
+    #quit-succes {
+        position: absolute;
+        top: 4%;
+        z-index: 999;
+        right: 2%;
+        transition: 1000ms ease-in-out;
+        transform: translateX(110%);
+    }
+
+    .quit-succes-active {
         transform: translateX(0) !important;
     }
 
@@ -300,11 +320,14 @@ html {
             display: flex;
             justify-content: space-between;
 
-            .fond {
+            a {
                 width: 49.25%;
-
-                .centre-btn {
+                .fond {
                     width: 100%;
+
+                    .centre-btn {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -449,7 +472,10 @@ html {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            font-family: "corps", Arial, Helvetica, sans-serif;
+            font-family: "corps",
+            Arial,
+            Helvetica,
+            sans-serif;
             border: 3px solid transparent;
 
             h2 {
@@ -500,6 +526,173 @@ html {
 
         .block-monde:hover .img .play {
             opacity: 1;
+        }
+    }
+}
+
+#remerciement-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/d3l1qoj-f1b1c676-9602-4c65-bd7d-ea518fbc8b88.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #enchant-succes {
+        position: absolute;
+        top: 4%;
+        z-index: 999;
+        right: 2%;
+        transition: 1000ms ease-in-out;
+        transform: translateX(110%);
+    }
+
+    .enchant-succes-active {
+        transform: translateX(0) !important;
+    }
+
+    #cursor {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #C28340;
+        border-radius: 100%;
+        pointer-events: none;
+        z-index: 999;
+        box-shadow: 0px 0px 8px #C28340;
+    }
+
+    .btn {
+        background-color: $gris-btn;
+        font-family: "corps", Arial, Helvetica, sans-serif;
+        color: white;
+        height: 3rem;
+        font-size: 1.5rem;
+        border-top: 2px solid $gris-claire;
+        border-left: 2px solid $gris-claire;
+        border-bottom: 2px solid $gris-sombre;
+        border-right: 2px solid $gris-sombre;
+        text-shadow: 3px 3px 0px $gris-sombre;
+    }
+
+    .fond {
+        position: absolute;
+        width: 15vw;
+        height: 7vh;
+        bottom: 6vh;
+        display: flex;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: overlay;
+        }
+    }
+
+    .fond:hover {
+        transform: scale(1.03);
+        transition: 200ms ease-in-out;
+    }
+
+    .claire {
+        width: 100%;
+        background-color: white;
+        mix-blend-mode: overlay;
+    }
+
+    #claire-haut {
+        height: 10vh;
+    }
+
+    #claire-bas {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .abs-btn {
+        width: 15vw;
+        height: 7vh;
+    }
+
+    #milieux {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #merci {
+        color: white;
+        font-family: "corps", Arial, Helvetica, sans-serif;
+        width: 60%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #titre-merci {
+        position: relative;
+
+        @keyframes enchant {
+            0% {
+                color: rgb(155, 67, 155);
+                opacity: 0.8;
+            }
+            20% {
+                color: rgb(233, 198, 233);
+            }
+            40% {
+                color: rgb(83, 26, 97);
+            }
+            60% {
+                color: rgb(87, 46, 163);
+            }
+            80% {
+                color: rgb(92, 108, 197);
+            }
+            100% {
+                color: rgb(46, 141, 165);
+                opacity: 0.8;
+            }
+        }
+
+        #merci-devant {
+            font-size: 5rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            width: auto;
+            color: $gris-claire;
+            z-index: 5;
+            margin: 0;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+        }
+
+        .merci-active {
+            animation: enchant 5000ms ease-in-out alternate infinite;
+        }
+
+        #merci-derriere {
+            position: absolute;
+            top: 4px;
+            left: 0px;
+            font-size: 5rem;
+            font-family: "titre", Arial, Helvetica, sans-serif;
+            width: auto;
+            color: $gris-sombre;
+            z-index: -1;
+            margin: 0;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
         }
     }
 }

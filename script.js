@@ -1,4 +1,5 @@
 let beeBtn = document.getElementById("bee-btn")
+let quitBtn = document.getElementById("quit-btn")
 
 beeBtn.addEventListener("click", function () {
     document.getElementById("bee").classList.add("bee-active")
@@ -10,6 +11,21 @@ beeBtn.addEventListener("click", function () {
         document.getElementById("bee").classList.remove("bee-active")
     }, 13000);
 })
+
+quitBtn.addEventListener("click", function () {
+    // document.getElementById("quit-succes").classList.add("quit-succes-active")
+    // setTimeout(() => {
+    //     document.getElementById("quit-succes").classList.remove("quit-succes-active")
+    // }, 4000);
+    setTimeout(() => {
+        window.location.href = "https://google.com"
+    }, 100); // si easter egg temps a 6000ms
+})
+
+
+
+
+
 
 
 
