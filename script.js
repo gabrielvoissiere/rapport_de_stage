@@ -7,6 +7,8 @@ beeBtn.addEventListener("click", function () {
     document.getElementById("bee").classList.add("bee-active")
     document.getElementById("bee-succes").classList.add("bee-succes-active")
 
+    localStorage.setItem("bee", "https://minecraftskinstealer.com/achievement/1/Oh%21+Une+abeille+%21/Trouver+l%27abeille+cach%C3%A9")
+
     setTimeout(() => {
         document.getElementById("bee-succes").classList.remove("bee-succes-active")
     }, 4000);
