@@ -33,7 +33,23 @@ if (enchant == null || enchant == "undefifined" || enchant == "") {
     document.getElementById("succesEnchant").setAttribute("src", enchant)
 }
 
-// enchant
+// intro
+let intro = localStorage.getItem("intro")
+if (intro == null || intro == "undefifined" || intro == "") {
+    //noting
+} else {
+    document.getElementById("succesIntro").setAttribute("src", intro)
+}
+
+// entreprise
+let entreprise = localStorage.getItem("btn")
+if (entreprise == null || entreprise == "undefifined" || entreprise == "") {
+    //noting
+} else {
+    document.getElementById("succesBtn").setAttribute("src", entreprise)
+}
+
+// succes
 let succes = localStorage.getItem("succes")
 if (succes == null || succes == "undefifined" || succes == "") {
     //noting
