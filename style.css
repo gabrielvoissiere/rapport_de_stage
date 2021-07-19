@@ -34,6 +34,11 @@ body #sound {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #index {
   width: 100vw;
   height: 100vh;
@@ -1447,5 +1452,131 @@ body #sound {
 #entreprise .btn-succes-active {
   -webkit-transform: translateX(0) !important;
           transform: translateX(0) !important;
+}
+
+#annexe {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/d3l1qoj-f1b1c676-9602-4c65-bd7d-ea518fbc8b88.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#annexe #cursor {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #C28340;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 8px #C28340;
+          box-shadow: 0px 0px 8px #C28340;
+}
+
+#annexe .btn {
+  background-color: #808080;
+  font-family: "corps", Arial, Helvetica, sans-serif;
+  color: white;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-top: 2px solid #C1BEBE;
+  border-left: 2px solid #C1BEBE;
+  border-bottom: 2px solid #555555;
+  border-right: 2px solid #555555;
+  text-shadow: 3px 3px 0px #555555;
+}
+
+#annexe .fond {
+  position: absolute;
+  width: 15vw;
+  height: 7vh;
+  bottom: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#annexe .fond img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: overlay;
+}
+
+#annexe .fond:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+#annexe .claire {
+  width: 100%;
+  background-color: white;
+  mix-blend-mode: overlay;
+}
+
+#annexe #claire-haut {
+  height: 10vh;
+}
+
+#annexe #claire-bas {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#annexe .abs-btn {
+  width: 15vw;
+  height: 7vh;
+}
+
+#annexe #milieux {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: "corps", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+#annexe #milieux img {
+  height: 80%;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
