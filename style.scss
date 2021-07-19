@@ -811,7 +811,7 @@ body {
         height: 70vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         p {
@@ -827,6 +827,11 @@ body {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             gap: 5px;
+        }
+
+        #reset {
+            font-family: "corps", Arial, Helvetica, sans-serif;
+            border-bottom: 1px solid white;
         }
     }
 
