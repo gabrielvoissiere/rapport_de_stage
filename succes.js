@@ -56,3 +56,11 @@ if (succes == null || succes == "undefifined" || succes == "") {
 } else {
     document.getElementById("succesucces").style.opacity = 1
 }
+
+// succes
+let reverse = localStorage.getItem("tnt")
+if (reverse == null || reverse == "undefifined" || reverse == "") {
+    //noting
+} else {
+    document.getElementById("succesReverse").setAttribute("src", reverse)
+}
