@@ -10,3 +10,15 @@ batBtn.addEventListener("click", function () {
         document.getElementById("bat-succes").classList.remove("bat-succes-active")
     }, 4000);
 })
+
+let endBtn = document.getElementById("end")
+
+endBtn.addEventListener("mouseover", function () {
+    document.getElementById("end-succes").classList.add("end-succes-active")
+
+    localStorage.setItem("end", "https://minecraftskinstealer.com/achievement/28/the+end+%3F/Arriver+%C3%A0+la+conclusion")
+
+    setTimeout(() => {
+        document.getElementById("end-succes").classList.remove("end-succes-active")
+    }, 4000);
+})

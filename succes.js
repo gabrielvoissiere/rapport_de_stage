@@ -57,10 +57,18 @@ if (succes == null || succes == "undefifined" || succes == "") {
     document.getElementById("succesucces").style.opacity = 1
 }
 
-// succes
+// experience
 let reverse = localStorage.getItem("tnt")
 if (reverse == null || reverse == "undefifined" || reverse == "") {
     //noting
 } else {
     document.getElementById("succesReverse").setAttribute("src", reverse)
+}
+
+// conclusion
+let end = localStorage.getItem("end")
+if (end == null || end == "undefifined" || end == "") {
+    //noting
+} else {
+    document.getElementById("succesEnd").setAttribute("src", end)
 }

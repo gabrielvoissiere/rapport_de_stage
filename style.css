@@ -682,6 +682,22 @@ a {
           transform: translateX(0) !important;
 }
 
+#sommaire #end-succes {
+  position: absolute;
+  top: 4%;
+  z-index: 999;
+  right: 2%;
+  -webkit-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+}
+
+#sommaire .end-succes-active {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
 #remerciement-page {
   width: 100vw;
   height: 100vh;
