@@ -17,12 +17,12 @@ input {
 
 @font-face {
   font-family: "corps";
-  src: url("../rapport_de_stage/fonts/Minecraft.ttf");
+  src: url("/fonts/Minecraft.ttf");
 }
 
 @font-face {
   font-family: "titre";
-  src: url("../rapport_de_stage/fonts/minecrafter-alt.ttf");
+  src: url("/fonts/minecrafter-alt.ttf");
 }
 
 html {
