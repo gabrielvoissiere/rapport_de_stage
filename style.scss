@@ -25,14 +25,16 @@ input {
 
 @font-face {
     font-family: "corps";
-    src: url("/fonts/Minecraft.ttf");
+    src: url("../rapport_de_stage/fonts/Minecraft.ttf");
     //! changer par "/fonts/Minecraft.ttf" pour dev local
+    //! changer par "../rapport_de_stage/fonts/Minecraft.ttf" pour prod
 }
 
 @font-face {
     font-family: "titre";
-    src: url("/fonts/minecrafter-alt.ttf");
+    src: url("../rapport_de_stage/fonts/minecrafter-alt.ttf");
     //! changer par "/fonts/minecraftrt-alt.ttf" pour dev local
+    //! changer par "../rapport_de_stage/fonts/minecrafter-alt.ttf" pour prod
 }
 
 html {
